@@ -2,8 +2,8 @@
 title: NSQ Blog
 SEOTitle: 粘世强的博客 | NSQ Blog
 header-img: img/post-bg-desk.jpg
-email: nianshiqiang2017@gmail.com
-description: "Every failure is leading towards success."
+email: nianshiqiang@126.com
+description: "用数据解读世界"
 keyword: "NSQ, NSQ Blog, 粘世强的博客, nianshiqiang, 粘世强"
 url: "http://nianshiqiang.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,13 +12,13 @@ github_repo: "https://github.com/nianshiqiang/nianshiqiang.github.io.git" # you 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "love and believe"
-#sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-m.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: true
-# weibo_username:     qiubaiying
+#weibo_username:     qiubaiying
 #zhihu_username:     qiubaiying
 github_username:    nianshiqiang
 #facebook_username:  baiying.qiu.7
