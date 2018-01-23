@@ -12,7 +12,7 @@ github_repo: "https://github.com/nianshiqiang/nianshiqiang.github.io.git" # you 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "love and believe"
-sidebar-avatar: /img/avatar-m.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/personal_image.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
