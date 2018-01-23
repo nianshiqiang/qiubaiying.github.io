@@ -185,9 +185,18 @@ layout: default
                             {% endif %}
                             
                         </ul>
+			<ul>
                         {% if site.email %}
+			<li>
                             <p>✉️ {{site.email}}</p>
+			</li>
                         {% endif %}
+			{% if site.wechat %}    
+			<li>
+                           <p>✉️ {{site.wechat}}</p>
+		        </li>
+                        {% endif %}   
+			</ul>
                     </div>
                 </section>
                 <!-- Friends Blog -->
