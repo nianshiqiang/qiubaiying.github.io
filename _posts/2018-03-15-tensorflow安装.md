@@ -2,7 +2,7 @@
 layout:     post
 title:     tensorflow安装
 subtitle:   tensorflow安装
-date:       2018-03-16
+date:       2018-03-15
 author:     粘世强
 header-img: img/tag-bg-o.jpg
 catalog: true
