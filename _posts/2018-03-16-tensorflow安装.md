@@ -1,3 +1,14 @@
+---
+layout:     post
+title:     tensorflow安装
+subtitle:   tensorflow安装
+date:       2018-03-16
+author:     粘世强
+header-img: img/tag-bg-o.jpg
+catalog: true
+tags:
+        - tensorflow
+---
 1. 在安装tensorflow之前，要先安装anaconda。
 
 2. windows上安装tensorflow。https://www.tensorflow.org/install/install_windows
