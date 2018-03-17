@@ -21,7 +21,7 @@ tags:
 
 5. 使用 feed 和 fetch 可以为任意的操作(arbitrary operation) 赋值或者从其中获取数据.
 
-   ![](content\tensorflow结构图.png)
+   ![](https://github.com/nianshiqiang/nianshiqiang.github.io/blob/master/contentimg/tensorflow%E7%BB%93%E6%9E%84%E5%9B%BE.png?raw=true)
 
 ### 二：创建图和启动图
 
