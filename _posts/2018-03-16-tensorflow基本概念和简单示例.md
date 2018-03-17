@@ -21,7 +21,7 @@ tags:
 
 5. 使用 feed 和 fetch 可以为任意的操作(arbitrary operation) 赋值或者从其中获取数据.
 
-   ![](C:\Personal files\Academic\data science\tensorflow\10讲课程\tensorflow结构图.png)
+   ![](content\tensorflow结构图.png)
 
 ### 二：创建图和启动图
 
