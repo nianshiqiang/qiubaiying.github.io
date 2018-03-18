@@ -54,7 +54,7 @@ tags:
 ```python
    #另一种方法调用session，执行会话，不用关闭sess.
    with tf.Session() as sess:
-       result = sess.run(product)
+       result = sess.run(product)#运行着一个节点，与之相关的节点都会被运行
        print(result)
 ```
 
@@ -170,8 +170,8 @@ import numpy as np
 
 ```python
 #生成100个随机数
-x_data = np.random.randn(100)
-t_data = np.random.rand(100)
+x_data = np.random.randn(100)#生成100个符合正态分布的随机数
+t_data = np.random.rand(100)#生成100个0-1之间均匀分布的随机数
 #构造一个多元线性方程
 y_data = x_data * 1.5 + 0.5 * t_data + 0.8
 ```
@@ -181,7 +181,8 @@ y_data = x_data * 1.5 + 0.5 * t_data + 0.8
 #定义三个变量
 b = tf.Variable(0.)
 k = tf.Variable(0.)
-m = tf.Variable(0.)
+m = tf.Variable(0.)  #0后边有一个小数点表示变量初始值为浮点型
+#构造一个模拟的函数
 y = x_data * b + k * t_data + m
 #构造一个损失函数(二次代价函数)
 loss = tf.reduce_mean(tf.square(y_data-y))#先求差值的平方，然后求平均
@@ -189,7 +190,9 @@ loss = tf.reduce_mean(tf.square(y_data-y))#先求差值的平方，然后求平�
 optimizer = tf.train.GradientDescentOptimizer(0.2)#梯度下降法优化，学习率为0.2
 #最小化代价函数
 train = optimizer.minimize(loss)
-init = tf.global_variables_initializer()#变量初始化
+#变量初始化
+init = tf.global_variables_initializer()
+#构建一个会话
 with tf.Session() as sess:
     sess.run(init)
     for i in range(501):
