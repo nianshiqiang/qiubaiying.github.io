@@ -4,7 +4,7 @@ title:     tensorflow中代价函数与激活函数的选择
 subtitle:   代价函数，激活函数
 date:       2018-03-18
 author:     粘世强
-header-img: img/the-5th-141680.jpg
+header-img: img/post-bg-universe.jpg
 catalog: true
 tags:
         - tensorflow
