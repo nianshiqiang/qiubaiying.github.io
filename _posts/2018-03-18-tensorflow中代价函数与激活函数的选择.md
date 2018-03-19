@@ -1,3 +1,15 @@
+---
+layout:     post
+title:     tensorflow中代价函数与激活函数的选择
+subtitle:   代价函数，激活函数
+date:       2018-03-18
+author:     粘世强
+header-img: img/the-5th-141680.jpg
+catalog: true
+tags:
+        - tensorflow
+---
+
 ### 激活函数与代价函数的选择
 
 常用的代价函数有二次代价函数，交叉熵代价函数。对数似然代价函数。常用激活函数有sigmoid函数（二分类问题时使用），softmax函数（对于多分类问题，神经网络最后一层的激活函数为softmax函数）。
