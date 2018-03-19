@@ -20,9 +20,9 @@ tags:
 $$
 C = \frac{1}{2n}  \sum_{x} (y - prediction)^2
 $$
-![](C:\Personal files\Academic\data science\tensorflow\10讲课程\二次代价函数2.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/%E4%BA%8C%E6%AC%A1%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B02.png)
 
-![](C:\Personal files\Academic\data science\tensorflow\10讲课程\二次代价函数3.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/%E4%BA%8C%E6%AC%A1%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B03.png)
 
 从以上的函数偏导可以看出，函数的收敛速度和激活函数的导数是正相关的。导数越大，收敛速度越快。
 
@@ -32,7 +32,7 @@ $$
 
 #### 交叉熵代价函数
 
-![](C:\Personal files\Academic\data science\tensorflow\10讲课程\交叉熵代价函数.png)
+![](https://github.com/nianshiqiang/nianshiqiang.github.io/blob/master/contentimg/%E4%BA%A4%E5%8F%89%E7%86%B5%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0.png?raw=true)
 
 从上边的推到结果可以看出，权重（w)和偏置（b)的导数与"预测值和真实值的差值"有关，而与激活函数的导数无关。当差值越小，即越接近真实值时，梯度越小，收敛越慢；离真实值越远时，收敛越快。符合我们的要求。这样能够加快收敛速度。
 
