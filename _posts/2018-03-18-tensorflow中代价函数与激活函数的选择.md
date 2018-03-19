@@ -17,6 +17,8 @@ tags:
 #### 二次代价函数
 
 首先，二次代价函数如下：
+
+![](https://github.com/nianshiqiang/nianshiqiang.github.io/blob/master/contentimg/%E4%BA%8C%E6%AC%A1%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0%E5%85%AC%E5%BC%8F.PNG?raw=true)
 $$
 C = \frac{1}{2n}  \sum_{x} (y - prediction)^2
 $$
