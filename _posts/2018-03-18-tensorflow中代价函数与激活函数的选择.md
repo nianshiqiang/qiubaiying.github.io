@@ -7,7 +7,7 @@ author:     粘世强
 header-img: img/post-bg-universe.jpg
 catalog: true
 tags:
-        - tensorflow
+    - tensorflow
 ---
 
 ### 激活函数与代价函数的选择
