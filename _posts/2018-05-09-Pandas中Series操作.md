@@ -4,7 +4,7 @@ title:     Pandas中Series操作
 subtitle:   pandas Series
 date:       2018-05-09
 author:     粘世强
-header-img: img/Quotefancy-4674142-3840x2160.jpg
+header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
         - python
