@@ -13,11 +13,9 @@ tags:
 
 之前的两期中，我们简单的讨论了Pandas中两种基本的数据结构，Series和DataFrame。今天我们来说一说pandas中的几个重要的函数，分别是groupby，apply和concat。
 
-## groupby
+## groupby函数
 
 首先来看一下groupby函数，顾名思义，groupby就是按照xx分组的意思，所以这个函数就是用来对DataFrame进行分组使用的。下边来看一个例子，就能清楚的看明白这个函数的功能了。
-
-https://github.com/nianshiqiang/nianshiqiang.github.io/blob/master/contentimg/groupby,apply,concat/apply1.png?raw=true
 
 ```python
 salaries = pd.DataFrame({
@@ -130,13 +128,13 @@ df1 = pd.DataFrame({'apt':[55000,60000],'cars':[200000,300000]},index = ['Shangh
 ![](https://github.com/nianshiqiang/nianshiqiang.github.io/blob/master/contentimg/groupby,apply,concat/df1.png?raw=true)
 
 ```python
-df1 = pd.DataFrame({'apt':[35000,45000],'cars':[120000,100000]},index = ['Hangzhou','Guangzhou'])
+df2 = pd.DataFrame({'apt':[35000,45000],'cars':[120000,100000]},index = ['Hangzhou','Guangzhou'])
 ```
 
 ![](https://github.com/nianshiqiang/nianshiqiang.github.io/blob/master/contentimg/groupby,apply,concat/df2.png?raw=true)
 
 ```python
-df1 = pd.DataFrame({'apt':[30000,10000],'cars':[120000,100000]},index = ['Nanjing','Chongqing'])
+df3 = pd.DataFrame({'apt':[30000,10000],'cars':[120000,100000]},index = ['Nanjing','Chongqing'])
 ```
 
 ![](https://github.com/nianshiqiang/nianshiqiang.github.io/blob/master/contentimg/groupby,apply,concat/df3.png?raw=true)
