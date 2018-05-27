@@ -29,7 +29,7 @@ tags:
 
 在开展具体的案例之前，我们先抛出一张在`matplotlib`中各个对象名称的图片，这对大家理解非常有帮助，在后边文章中遇到不理解的可以参考这张图片。
 
-![](fig和axes.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/fig和axes.png)
 
 ### 案例一：航班乘客分析
 
@@ -55,7 +55,7 @@ data = sns.load_dataset('flights')
 data.head()
 ```
 
-![](1.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/1.png)
 
 可以看出这份数据包含了年份(1949 - 1960)，月份，乘客数量三列数据。
 
@@ -68,7 +68,7 @@ amount_per_year = data.groupby("year")[['passengers']].sum()
 amount_per_year.head()
 ```
 
-![](2.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/2.png)
 
 这时，`amount_per_year`对年度数据进行了汇总。可以利用`amount_per_year`的数据进行可视化。每个命令的含义和使用方法都在注释中。因为`matplotlib`的知识点超级多，想要系统的学习完是不可能的，而且也是不正确的学习方法，还是要坚持在用中学，不断积累基本用法，这样才能够不断的熟悉，操作越来越得心应手。
 
@@ -91,7 +91,7 @@ plt.ylabel('passenger number')
 plt.show()
 ```
 
-![](3.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/3.png)
 
 从图形中可以看出，在1949年到1960年间，乘客的数量是逐年递增的。
 
@@ -102,7 +102,7 @@ amount_per_month = data.groupby("month")[['passengers']].sum()
 amount_per_month
 ```
 
-![](4.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/4.png)
 
 ```python
 #更改索引值，将月份值改为数字,若不改为数字，横坐标会按照月份英文的首字母进行排序
@@ -123,7 +123,7 @@ plt.title("passengers per month")
 plt.show()
 ```
 
-![](5.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/5.png)
 
 从这个图中可以明显的看出7月和8月份的出行人数最多。这个分析过程也可以使用折线图来完成，这里使用柱状图是为了使大家能够熟悉不同种类图形的绘制方法。
 
@@ -145,7 +145,7 @@ data.head()
 # 萼片长度，萼片宽度，花瓣长度，花瓣宽度，种类
 ```
 
-![](6.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/6.png)
 
 要分析萼片和花瓣的大小关系，需要先计算以下两者的尺寸，用各自的长乘各自的宽。这里也提醒我们一点，在数据分析过程中，拿到原始数据后，可以利用其中的某些特征自己组合新的特征来进行分析，实践也证明这种组合特征往往能够带来很多意外的惊喜。
 
@@ -156,7 +156,7 @@ data["petal_size"] = data["petal_length"] * data["petal_width"]
 data.head()
 ```
 
-![](7.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/7.png)
 
 ```python
 # 准备一张画布和作图区域
@@ -168,7 +168,7 @@ axes.set_xlabel("sepal_size")
 axes.set_ylabel('petal_size')
 ```
 
-![](8.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/8.png)
 
 从散点图上看不出这两个变量之间存在着明显的相关关系。
 
@@ -197,7 +197,7 @@ for species in data['species'].unique():
 plt.show()
 ```
 
-![](9.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/9.png)
 
 #### 不同种类鸢尾花萼片和花瓣大小的分布情况
 
@@ -241,7 +241,7 @@ for species in m.index:
 plt.show()
 ```
 
-![](10.png)
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/10.png)
 
 * 箱式图的介绍  参考[狗熊会：丑图百讲](https://mp.weixin.qq.com/s?__biz=MzA5MjEyMTYwMg==&mid=2650236862&idx=1&sn=a3d071450ed98bd8c079d0bd4e3dbd10&scene=21#wechat_redirect)
 
@@ -251,7 +251,7 @@ plt.show()
 
   在箱子的上方和下方，又各有一条线。有时候代表着最大最小值，有时候会有一些点“冒出去”。请千万不要纠结，不要纠结，不要纠结（重要的事情说三遍），如果有点冒出去，理解成**“异常值”**就好。
 
-  ![](11.png)
+  ![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/11.png)
 
   * 箱式图是针对连续型变量的，解读的时候重点关注平均水平，波动程度和异常值。直方图是针对离散性变量的。
   * 当箱子被压的很扁或者有很多异常值的时候，试着做对数变换。
@@ -260,7 +260,7 @@ plt.show()
 
 关于`matplotlib`的介绍就这些了，欢迎大家提出问题一起学习。我们有对应的微信公众号“数据跬步”，欢迎大家关注。有问题可以直接在微信后交流，这种方式效率会更高一些。
 
- ![](数据跬步二维码.jpg)
+ ![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/matplotlib/数据跬步二维码.jpg)
 
 ​     
 
