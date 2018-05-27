@@ -7,7 +7,6 @@ author:     粘世强
 header-img: img/post-bg-swift2.jpg
 catalog: true
 tags:
-        - python
         - pandas
 ---
 

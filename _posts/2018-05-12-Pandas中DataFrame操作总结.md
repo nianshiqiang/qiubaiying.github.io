@@ -7,7 +7,6 @@ author:     粘世强
 header-img: img/post-bg-coffee.jpeg
 catalog: true
 tags:
-        - python
         - pandas
 ---
 今天我们来总结一下在Pandas库中DataFrame的操作，由于在markdown中显示DataFrame存在困难，因此以图片的形式进行上传。
