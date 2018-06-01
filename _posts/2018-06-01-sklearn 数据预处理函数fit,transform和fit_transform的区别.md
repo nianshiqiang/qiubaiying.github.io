@@ -65,3 +65,4 @@ scaler.transform([[-1., 1., 0.]])
 
 也就是说，当我们在训练集上调用`fit_transform`，对训练数据进行先拟合后标准化的处理时，此时我们已经得到数据的均值和方差，这一操作接下来不用重复执行，因此我们在测试集上只需要调用`transform`，对测试数据进行标准化的处理。数据处理过程如下图所示：
 
+![](https://raw.githubusercontent.com/nianshiqiang/nianshiqiang.github.io/master/contentimg/fit_transform.png)
